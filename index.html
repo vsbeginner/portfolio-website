@@ -1,335 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Vinayak Sharma</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Vinayak Sharma</title>
 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<div id="loader">
-  <div class="loader-circle"></div>
-  <p>Loading portfolio...</p>
-</div>
 <body>
-    <!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">Vinayak Sharma</div>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-circle"></div>
+    <p>Loading portfolio...</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Portfolio Website</div>
     <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <button id="theme-toggle" class="theme-toggle">☀️</button>
+  </nav>
 
-</nav>
-<!-- Hero Section -->
-<section id="hero" data-aos="fade-up">
-    <div class="hero-content">
-        <h1>Hi, I’m <span>Vinayak Sharma</span></h1>
-        <h2>MCA Student | Tech Enthusiast</h2>
+  <!-- HERO -->
+  <section id="hero" data-aos="fade-up">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1>
+          Vinayak<br />
+          <span>Sharma</span>
+        </h1>
+        <p class="hero-subtitle">
+          Hi, I’m <strong>Vinayak Sharma</strong> — MCA student intersted in building
+          real-world solutions using <span>AI</span>, <span>ML</span>,
+          <span>IoT</span> &amp; modern <span>web technologies</span>.
+        </p>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
+        <p class="hero-tagline">
+          Goal: Turning ideas into working products with clean code, data-driven
+          thinking and practical engineering.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Let’s Connect</a>
         </div>
-    </div>
+      </div>
 
-    <div class="hero-image">
-        <img src="assets/images/profile.jpg" alt="Vinayak Sharma">
-    </div>
-</section>
-
-
-<!-- About Section -->
-<section id="about" data-aos="fade-right">
-    <div class="container-box">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="assets/images/about.jpg" alt="About Image">
+      <div class="hero-image">
+        <!-- your existing image -->
+        <div class="hero-image-frame">
+          <img src="assets/images/profile.jpg" alt="Vinayak Sharma" />
         </div>
+        <div class="hero-stat hero-stat-top">
+          <span class="label">Focus</span>
+          <span class="value">AI · ML · IoT</span>
+        </div>
+        <div class="hero-stat hero-stat-bottom">
+          <span class="label">Experience</span>
+          <span class="value">Web · STEM · 3D</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="about-content">
-            <h2>About Me</h2>
+  <!-- ABOUT -->
+  <section id="about" data-aos="fade-right">
+    <div class="section-inner about-container">
+      <div class="about-image">
+        <img src="assets/images/about.jpg" alt="About" />
+      </div>
 
-            <p>
-                Motivated IT graduate with strong foundations in Python, SQL, AI, Machine Learning, and IoT. 
-                Experienced in developing web applications and 3D meta-human models, with hands-on exposure 
-                to STEM education. Adept at problem-solving, teaching technical concepts, and building practical 
-                projects. Seeking opportunities in Software Development, Data Science, AI/ML, or IoT roles.
-            </p>
+      <div class="about-content">
+        <h2>About Me</h2>
 
-            <p class="career-goal"><strong>Career Goal:</strong> My aim is to bridge the gap between data and decision making as I aspire to become a software developer where I will create AI-driven software that will make a tangible impact on how people live and work.</p>
+        <p>
+          Motivated IT graduate with strong foundations in
+          <strong>Python</strong>, <strong>SQL</strong>,
+          <strong>AI</strong>, <strong>Machine Learning</strong>, and
+          <strong>IoT</strong>. Experienced in developing web applications, 
+          with hands-on exposure to STEM education.
+        </p>
 
-            <h3>Strengths</h3>
-            <ul class="strength-list">
-                <li>Strong communication skills developed as an event anchor and educator</li>
+        <p>
+          Good at problem-solving, teaching technical concepts and building
+          practical projects. Seeking opportunities in
+          <strong>Software Development</strong>,
+          <strong>Data Science</strong>, <strong>AI/ML</strong> or
+          <strong>IoT</strong> roles.
+        </p>
+
+        <p class="career-goal">
+          <strong>Career Goal:</strong> To bridge the gap between data and
+          decision-making by building AI-driven software that creates tangible
+          impact on how people live and work.
+        </p>
+
+        <h3>Strengths</h3>
+        <ul class="strength-list">
+          <li>
+            Strong communication skills honed as an event anchor and educator
+          </li>
+          <li>Comfortable explaining complex technical topics simply</li>
+          <li>Fast learner and highly adaptable to new technologies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" data-aos="fade-left">
+    <div class="section-inner skills-container">
+      <div class="skills-content">
+        <h2>Skills</h2>
+
+        <div class="skill-grid">
+          <div class="skill-block">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
             </ul>
+          </div>
 
-            <h3>Quick Info</h3>
-            <ul class="info-list">
-                <li><strong>Email:</strong> your email here</li>
-                <li><strong>Location:</strong> your city, India</li>
-                <li><strong>Languages:</strong> English, Hindi</li>
+          <div class="skill-block">
+            <h3>Domains</h3>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Internet of Things (IoT)</li>
             </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>React</li>
+              <li>Django</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3>Tools & Platforms</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>MySQL</li>
+              <li>VS Code</li>
+              <li>IoT Components &amp; Arduino</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communication</li>
+              <li>Leadership</li>
+              <li>Problem Solving</li>
+              <li>Team Management</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="skills-image">
+        <img
+          src="assets/images/skills-illustration.jpg"
+          alt="Skills illustration"
+        />
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" data-aos="fade-up">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
 
-<!-- Skills Section -->
-<section id="skills" data-aos="fade-left">
-    <div class="container-box">
-    <div class="skills-container">
-
-        <!-- Skills Text Left -->
-        <div class="skills-content">
-            <h2>Skills</h2>
-
-            <div class="skill-block">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-
-            <div class="skill-block">
-                <h3>Technologies / Domains</h3>
-                <ul>
-                    <li>Artificial Intelligence</li>
-                    <li>Machine Learning</li>
-                    <li>IoT</li>
-                </ul>
-            </div>
-
-            <div class="skill-block">
-                <h3>Frameworks & Libraries</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Django</li>
-                </ul>
-            </div>
-
-            <div class="skill-block">
-                <h3>Tools & Platforms</h3>
-                <ul>
-                    <li>Git & GitHub</li>
-                    <li>MySQL</li>
-                    <li>VS Code</li>
-                    <li>IoT Components</li>
-                    <li>Arduino</li>
-                </ul>
-            </div>
-
-            <div class="skill-block">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Communication</li>
-                    <li>Leadership</li>
-                    <li>Problem Solving</li>
-                    <li>Team Management</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Image Right -->
-        <div class="skills-image">
-            <img src="assets/images/skills-illustration.jpg" alt="Skills Illustration">
-        </div>
-    </div>
-</div>
-</section>
-
-
-<!-- Projects Section -->
-<section id="projects" data-aos="fade-up">
-    <div class="container-box">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="projects-container">
-
+      <div class="projects-container">
         <!-- Project 1 -->
         <div class="project-card">
-            <img src="assets/images/weather-app.jpg" alt="Weather Web App">
+          <img src="assets/images/weather-app.jpg" alt="Weather Web App" />
+          <div class="project-body">
             <h3>Weather Web App</h3>
-            <p>A real-time weather forecasting web application built using HTML, CSS and JavaScript. Integrated OpenWeatherMap API for live temperature, humidity and climate details with dynamic UI updates.</p>
+            <p>
+              A real-time weather forecasting web application built using
+              HTML, CSS and JavaScript. Integrated OpenWeatherMap API for live
+              temperature, humidity and climate details with dynamic UI
+              updates.
+            </p>
 
             <div class="tech-stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>API</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>REST API</span>
             </div>
 
             <div class="project-buttons">
-                <a href="https://github.com/vsbeginner/Weather-Web-App" target="_blank" class="btn-project">GitHub</a>
+              <a
+                href="https://github.com/vsbeginner/Weather-Web-App"
+                target="_blank"
+                class="btn-secondary small"
+                >View on GitHub</a
+              >
             </div>
+          </div>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
-            <img src="assets/images/grid-layout.jpg" alt="Nature Theme Grid Layout">
+          <img
+            src="assets/images/grid-layout.jpg"
+            alt="Nature Theme Grid Layout"
+          />
+          <div class="project-body">
             <h3>Nature Theme Grid Layout</h3>
-            <p>A responsive nature-themed layout developed using CSS Grid & media queries. Includes smooth hover effects, animated hero text and structured visual sections for design enhancement.</p>
+            <p>
+              A responsive nature-themed layout developed using CSS Grid &amp;
+              media queries. Includes smooth hover effects, animated hero text
+              and well-structured visual sections.
+            </p>
 
             <div class="tech-stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>CSS Grid</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>CSS Grid</span>
             </div>
 
             <div class="project-buttons">
-                <a href="https://github.com/vsbeginner/grid-layout-assignment" target="_blank" class="btn-project">GitHub</a>
+              <a
+                href="https://github.com/vsbeginner/grid-layout-assignment"
+                target="_blank"
+                class="btn-secondary small"
+                >View on GitHub</a
+              >
             </div>
+          </div>
         </div>
 
-        <!-- Coming Soon Placeholder 1 -->
+        <!-- Coming Soon -->
         <div class="project-card coming-soon">
-            <div class="coming-content">
-                <h3>Coming Soon</h3>
-            </div>
+          <div class="coming-inner">
+            <h3>More Projects Coming Soon</h3>
+            <p>Actively building new work in AI, ML and IoT.</p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
-<!-- Education & Certifications Section -->
-<section id="education" data-aos="fade-right">
-    <div class="container-box">
-    <div class="edu-container">
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" data-aos="fade-right">
+    <div class="section-inner edu-container">
+      <div class="edu-left">
+        <h2>Education</h2>
 
-        <!-- Left Side: Education -->
-        <div class="edu-left">
-            <h2>Education</h2>
-
-            <div class="edu-block">
-                <h3>MCA — Master of Computer Applications</h3>
-                <p>K.R. Mangalam University (KRMU)</p>
-                <span>2025 – 2027 (Pursuing)</span>
-            </div>
-
-            <div class="edu-block">
-                <h3>BCA — Bachelor of Computer Applications</h3>
-                <p>Guru Gobind Singh Indraprastha University (GGSIPU)</p>
-                <span>2021 – 2024 (Completed)</span>
-            </div>
+        <div class="edu-block">
+          <h3>MCA — Master of Computer Applications</h3>
+          <p>K.R. Mangalam University (KRMU)</p>
+          <span>2025 – 2027 (Pursuing)</span>
         </div>
 
-        <!-- Right Side: Certifications -->
-        <div class="edu-right">
-            <h2>Certifications</h2>
-
-            <div class="cert-block">
-                <h3>Basic Java Programming</h3>
-                <p>Issued by: Study Trigger</p>
-                <span>2023</span>
-            </div>
-
-            <div class="cert-block">
-                <h3>Machine Learning With Python</h3>
-                <p>Issued by: IBM</p>
-                <span>2025</span>
-            </div>
+        <div class="edu-block">
+          <h3>BCA — Bachelor of Computer Applications</h3>
+          <p>Guru Gobind Singh Indraprastha University (GGSIPU)</p>
+          <span>2021 – 2024 (Completed)</span>
         </div>
+      </div>
+
+      <div class="edu-right">
+        <h2>Certifications</h2>
+
+        <div class="cert-block">
+          <h3>Machine Learning with Python</h3>
+          <p>Issued by: IBM</p>
+          <span>2025</span>
+        </div>
+
+        <div class="cert-block">
+          <h3>Basic Java Programming</h3>
+          <p>Issued by: Study Trigger</p>
+          <span>2023</span>
+        </div>
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
-<!-- Achievements -->
-<section id="achievements" data-aos="fade-up"></section>
-<div class="container-box">
-    <div class="achievements-container">
-        <h2 class="section-title">Achievements</h2>
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" data-aos="fade-up">
+    <div class="section-inner achievements-container">
+      <h2 class="section-title">Achievements</h2>
 
-        <div class="achievement-card">
-            <h3>🎤 Event Anchor & Coordinator</h3>
-            <p>Best Anchor, College Event – <strong>“Anugoonj Zonal – IV, Prelims”</strong></p>
-            <p>Event Coordinator for gaming events such as <strong>BGMI</strong> and <strong>Call of Duty</strong>.</p>
-        </div>
+      <div class="achievement-card">
+        <h3>Event Anchor &amp; Coordinator</h3>
+        <p>
+          Best Anchor, college event –
+          <strong>“Anugoonj Zonal – IV, Prelims”</strong>.
+        </p>
+        <p>
+          Event Coordinator for gaming events such as
+          <strong>BGMI</strong> and <strong>Call of Duty</strong>.
+        </p>
+      </div>
 
-        <div class="achievement-card">
-            <h3>🎓 Academic Achievements</h3>
-            <p>Machine Learning Workshop Speaker – <strong>“Unlocking the Power of ML”</strong></p>
-            <p>Research Presenter – <strong>“Study of Fintech: Opportunities & Challenges”</strong></p>
-        </div>
+      <div class="achievement-card">
+        <h3>Academic Achievements</h3>
+        <p>
+          Machine Learning Workshop Speaker –
+          <strong>“Unlocking the Power of ML”</strong>.
+        </p>
+        <p>
+          Research Presenter –
+          <strong>“Study of Fintech: Opportunities &amp; Challenges”</strong>.
+        </p>
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" data-aos="fade-up">
-    <div class="container-box">
-    <h2 class="section-title">Contact Me</h2>
+  <!-- CONTACT -->
+  <section id="contact" data-aos="fade-up">
+    <div class="section-inner contact-container">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>
+          If you’d like to collaborate, discuss an idea or explore
+          opportunities, feel free to reach out.
+        </p>
 
-    <div class="contact-container">
+        <ul>
+          <li><strong>Email:</strong> vinayaksharma220033@gmail.com</li>
+          <li><strong>Phone:</strong> 93191xxxxx</li>
+        </ul>
 
-        <!-- Left Side -->
-        <div class="contact-info">
-            <h3>Get In Touch</h3>
-            <p>If you would like to connect or discuss project opportunities, feel free to reach out.</p>
-
-            <ul>
-                <li><strong>Email:</strong> vinayaksharma220033@gmail.com</li>
-                <li><strong>Phone:</strong> 93191xxxxx</li>
-            </ul>
-
-            <div class="social-links">
-                <a href="https://github.com/vsbeginner" target="_blank">GitHub</a>
-                <a href="#" class="disabled-link">LinkedIn (Coming Soon)</a>
-            </div>
-
-            <a href="https://drive.google.com/file/d/1Ku9ICt2iOh7arqd00p9Ia4KeEX0Z28_8/view?usp=sharing" 
-            target="_blank" class="resume-btn">Download Resume</a>
+        <div class="social-links">
+          <a href="https://github.com/vsbeginner" target="_blank">GitHub</a>
+          <a href="#" class="disabled-link">LinkedIn (Coming Soon)</a>
         </div>
 
-        <!-- Right Side: Contact Form -->
-        <form class="contact-form" action="https://formspree.io/f/mldgnprq" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </div>
-</div>
-</section>
+        <a
+          href="https://drive.google.com/file/d/1Ku9ICt2iOh7arqd00p9Ia4KeEX0Z28_8/view?usp=sharing"
+          target="_blank"
+          class="btn-primary"
+          >Download Resume</a
+        >
+      </div>
 
-<!-- Footer Section -->
-<footer>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mldgnprq"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message..."
+          required
+        ></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
     <p>© 2025 Vinayak Sharma | All Rights Reserved</p>
     <div class="footer-links">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
     </div>
 
     <div class="footer-social">
-        <a href="https://github.com/vsbeginner" target="_blank">GitHub</a>
-        <a href="#" class="disabled-link">LinkedIn</a>
+      <a href="https://github.com/vsbeginner" target="_blank">GitHub</a>
+      <a href="#" class="disabled-link">LinkedIn</a>
     </div>
-</footer>
-<!-- AOS script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
+  </footer>
 
-<!-- Your custom JS -->
-<script src="script.js"></script>
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: false,
+      mirror: true
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
