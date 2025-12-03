@@ -20,11 +20,10 @@ if (themeToggleBtn) {
   themeToggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("light-theme");
 
-    // switch button icon
     if (document.body.classList.contains("light-theme")) {
-      themeToggleBtn.textContent = "🌙";  // moon means go back to dark
+      themeToggleBtn.textContent = "🌙"; // light -> show moon
     } else {
-      themeToggleBtn.textContent = "☀️";  // sun means go to light mode
+      themeToggleBtn.textContent = "☀️"; // dark -> show sun
     }
   });
 }
